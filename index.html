@@ -1,7 +1,178 @@
-<html> 
+<!doctype html>
+<html lang="en-US"> 
 <head> 
-<title>Number Cruncher</title> 
+ <meta charset utf-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equv="X-US-Compatible" content=""ie=edge">
+<title>Ese Odiase</title> 
 <style>
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.main.css" rel="stylesheet">   
+
+
+ion-icon{
+
+    content: "logo-facebook";
+    font-size: 50px;
+    }
+a:link{
+	text-decoration: none;
+	color: #fff;
+}
+
+.logo{
+	font-size: 30px;
+	float: right;
+	color: #577;
+	line-height: 60px;
+	height: 70px;
+	
+}
+span{
+	color: powderblue;
+}
+.header{
+	height: 100vh;
+background: url(https://lh3.googleusercontent.com/-NINXOSx_eVg/WzeFq-RxcWI/AAAAAAAABRs/3n94AVtRFx0X15vxqSobVTIBaIcra-vIgCHMYBhgL/s912/_20180630_142644.jpg)no-repeat 50% 50%;
+background-size: cover;
+	background-color: #789;
+	margin: 10px;
+}
+.nav{
+	border-bottom: solid #345;
+	line-height: 60px;
+	
+	width: 100%;
+}
+
+}
+.menu{
+	display: block;
+	background-color: lavender;
+	
+}
+.menu a{
+	display: inline-block;
+	color: white;
+	text-decoration:none;
+	line-height: 60px;
+	text-align: center;
+	font-weight: bold;
+	padding: 14px;
+	
+	
+}
+.menu a:hover{
+	background-color:lavender;
+}
+
+input[type="checkbox"]{
+	display: none ;
+
+}
+label{
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+	line-height: 60px;
+	margin-right: 10px;
+	
+}
+
+.container{
+	margin-top: 45px;
+	width: 100% ;
+	height: auto;
+	
+	
+}
+.centered-text h1{
+	color: pink;
+	text-align: center;
+}
+.centered-text p{
+	color: powderblue;
+	text-align: center;
+}
+body{
+	background: linear-gradient( pink, powderblue);
+}
+html,body{
+	width: 100%;
+	margin: 0px;
+	height: ;
+}
+
+.main{
+	margin: 10px;
+}
+
+
+.box{
+	
+	width: 80%;
+	height: auto;
+	margin-left: 40px;
+	margin-top: 0px;
+	
+}
+.boxes{
+	width: 39%;
+	margin: 2px;
+	float: left;
+}
+.after-float{
+	clear: both;
+}
+input[type="button"]
+{
+	font-size: 30;
+	text-align: center;
+	width: 25%;
+	float: center;
+	margin-left: 10px;
+	border-radius: 8%;
+	color: #235;
+}
+
+input[type="reset"]{
+	font-size: 50;
+	margin-left: 80px;
+	margin-top: 5px;
+	color: #ccc;
+	background-color: #235;
+	border: none;
+	border-radius: 10px;
+	
+}
+
+input[type="textfield"]{
+	width: 95%;
+	height: 100px;
+	margin-bottom: 5px;
+	font-size: 40px;
+	border-radius: 2%;
+	box-shadow: 15px, 19px lightgrey;
+	border: none;
+}
+h2{
+	text-align: center;
+}
+span{
+	color: #fff;
+	background-color: #235;
+}
+.footer{
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	background-color: #567;
+	margin: 0px;
+}
+form{
+	width: 100%;
+}
+
 @media only screen and (max-width: 500px){
 	
 
@@ -14,7 +185,7 @@
 }
 .menu{
 	display: none;
-	background-color: purple;
+	background-color: lavender;
 	
 }
 .menu a{
@@ -23,31 +194,34 @@
 	text-decoration:none;
 	line-height: 60px;
 	text-align: center;
+	font-weight: bold;
+	padding: 0px;
 	border-bottom: solid #fff;
 }
-.active {
-	color: black;
+.menu a:hover{
+	background-color:pink;
 }
-#toggle{
-	
-	
-	
-}
-input{
-	display: none;
+input[type="checkbox"]{
+	display: none ;
 }
 label{
 	font-size: 30px;
 	cursor: pointer;
+	display: block;
+	margin-right: 15px;
+}
+.boxes{
+	width: 100%;
 }
 }
-body{
-	background: linear-gradient( pink, blue);
-}
+
 </style>
 </head>
-<body >
+<body>
+<div class="header">
 <div class="nav">
+<div class="logo">
+<span style="color:powderblue">Ese</span> Odiase</div>
 <label for="toggle">&#9776;</label>
 <input type="checkbox" id="toggle"/>
 <div class="menu">
@@ -56,17 +230,29 @@ body{
 <a href="#">Contact</a>
 </div></div>
 
-<a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term="><img src="https://jumia.com/affiliate-program/banners/Jumia Nigeria/Computing/300X250.jpg"/>Jumia
-</a>
+<div class="container">
+<div class="centered-text">
+<h1>Yes!</h1></div>
+<div class="centered-text">
+<p>We are coming soon.</p></div>
+</div>
+</div>
 
-<a href="http://c.jumia.io/?a=152896&c=11&p=r&E=kkYNyk2M4sk%3d&ckmrdr=&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term="><img src="https://jumia.com/affiliate-program/banners/Jumia Nigera/Computing/300X250.jpg"/>
-</a>
+<div class="main">
+
+
+
 
 <div class="box">
-<form name="calculator" > 
+<div class="boxes">
+
+<h2><span> Number </span>Cruncher</h2> 
+
+<form name="calculator"> 
 
 
-<br><h2><span>Number</span>Cruncher</h2> <input type="textfield" name="ans" value=""> 
+
+<input type="textfield" name="ans" value=""> 
 
 <input type="button" value="1" onClick="document.calculator.ans.value+='1'"> 
 <input type="button" value="2" onClick="document.calculator.ans.value+='2'"> 
@@ -92,7 +278,51 @@ body{
 <input type="reset" value="Reset"> 
 </form> 
 </div>
-<footer><p>&copy; Ese G Odiase |2018|</p></footer>
 
-</body>
+</hr>
+
+
+<div class="boxes">
+<h2><span> Measurement </span> Flipper<h2>
+</div></div>
+
+<div class="after-float">something new</div>
+
+
+<a href="https://www.facebook.com/eximious.g">
+<ion-icon style="color:rgb(69, 94, 235)" name="logo-facebook"></ion-icon>
+</a>
+
+<a href="#">
+ <ion-icon style="color:rgb(131, 188, 241)" name="logo-twitter"></ion-icon>
+ </a>
+ <a href="https://api.whatsapp.com/send?phone=+2348153929729&text=Hi, I contacted you Through your website.">
+ <ion-icon style="color:green" name="logo-whatsapp"></ion-icon>
+ </a> 
+
+<a href="https://www.instagram.com/exay_02.24/">
+ <ion-icon style="color:rgb(193, 17, 216)" name="logo-instagram"></ion-icon>
+</a>
+
+</div>
+
+<a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term="><img src="https://jumia.com/affiliate-program/banners/Jumia Nigeria/Computing/300X250.jpg"/>Jumia
+</a>
+
+
+<div class="footer">
+<p>&copy;2019
+<a href="https://www.shapemytech.wordpress.com">
+| Ese G Odiase |
+</a>
+</p>
+</div>
+
+ <script src="https://unpkg.com/ionicons@4.2.1/dist/ionicons.js">  
+ </script>
+
+</body> 
 </html>
+
+    
+    
