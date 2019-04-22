@@ -186,10 +186,12 @@ form{
 
 /* Create two equal columns that floats next to each other */
 .column {
+	border: 	1px solid #fff;
+	
     float: left;
     margin: 2px;
-    width: 49%;
-    height: 300px; /* Should be removed. Only for demonstration */
+    width: 48%;
+    height: 320px; /* Should be removed. Only for demonstration */
 }
 /* Clear floats after the columns */
 .row {
@@ -298,6 +300,21 @@ h3{
 	text-align: center;
 	color: #235;
 }
+/* Create two equal columns that floats next to each other */
+.column {
+	border: 	none;
+	
+    float: none;
+    margin: 0px;
+    width: 100%;
+    height: auto;; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row {
+	width: 100%;
+	
+    content: "";
+    display: table;
 }
 
 </style>
@@ -459,6 +476,7 @@ all @exay_f24
 </body> 
 </html>
 
+    
     
     
     
