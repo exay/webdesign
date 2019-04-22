@@ -32,7 +32,7 @@ span{
 }
 .header{
 	height: 100vh;
-background: url(https://lh3.googleusercontent.com/-NINXOSx_eVg/WzeFq-RxcWI/AAAAAAAABRs/3n94AVtRFx0X15vxqSobVTIBaIcra-vIgCHMYBhgL/s912/_20180630_142644.jpg)no-repeat 50% 50%;
+   opacity: 0.5;
 background-size: cover;
 	background-color: #789;
 	margin: 10px;
@@ -40,7 +40,8 @@ background-size: cover;
 .nav{
 	border-bottom: solid #345;
 	line-height: 60px;
-	
+	opacity: 0.7;
+	background-color: #234;
 	width: 100%;
 }
 
@@ -62,7 +63,7 @@ background-size: cover;
 	
 }
 .menu a:hover{
-	background-color:lavender;
+	background-color: skyblue;
 }
 
 input[type="checkbox"]{
@@ -94,7 +95,9 @@ label{
 	text-align: center;
 }
 body{
-	background: linear-gradient( pink, powderblue);
+	background: url(https://shapemytech.files.wordpress.com/2019/04/6572869154489069922.jpg)no-repeat 50% 50%;
+	
+	background-size: cover;
 }
 html,body{
 	width: 100%;
@@ -109,7 +112,7 @@ html,body{
 
 .box{
 	
-	width: 90%;
+	width: 100%;
 	height: auto;
 	margin-left: 20px;
 	margin-top: 0px;
@@ -130,10 +133,17 @@ input[type="button"]
 	width: 26%;
 	float: center;
 	margin-left: 2px;
-	border-radius: 8%;
+	border-radius: 10%;
 	color: #235;
 }
-
+.orangered{
+	background-color: orangered;
+	border-radius: 8%;
+}
+.black{
+	background-color: grey;
+	border-radius: 8%;
+}
 input[type="reset"]{
 	font-size: 35px;
 	margin-left: 15px;
@@ -147,7 +157,7 @@ input[type="reset"]{
 
 input[type="textfield"]{
 	width: 95%;
-	height: 100px;
+	height: 50px;
 	margin-bottom: 5px;
 	font-size: 40px;
 	border-radius: 2%;
@@ -156,6 +166,8 @@ input[type="textfield"]{
 }
 h2{
 	text-align: center;
+	
+	color: #fff;
 }
 span{
 	color: #fff;
@@ -172,9 +184,36 @@ form{
 	width: 100%;
 }
 
-@media only screen and (max-width: 500px){
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    margin: 2px;
+    width: 49%;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row {
+	width: 100%;
 	
-
+    content: "";
+    display: table;
+  
+}
+h3{
+	text-align: center;
+	color: #fff;
+}
+@media only screen and (max-width: 500px){
+body{
+	background: linear-gradient( pink, powderblue);
+}	
+.header{
+	background: url(https://shapemytech.files.wordpress.com/2019/04/6572869154489069922.jpg)no-repeat 50% 50%;
+	opacity: 1;
+	background-size: cover;
+	margin: 0px;
+	
+}
 .nav{
 	border-bottom: solid #345;
 	line-height: 40px;
@@ -209,6 +248,12 @@ label{
 	display: block;
 	margin-right: 15px;
 }
+
+.box{
+	
+	width: 90%;
+	}
+	
 .boxes{
 	width: 100%;
 }
@@ -235,15 +280,24 @@ input[type="reset"]{
 }
 
 input[type="textfield"]{
+	position: relative;
 	width: 95%;
-	height: 100px;
+	height: 50px;
 	margin-bottom: 5px;
 	font-size: 40px;
 	border-radius: 2%;
 	box-shadow: 15px, 19px lightgrey;
 	border: none;
 }
-
+h2{
+	text-align: center;
+	
+	color: #235;
+}
+h3{
+	text-align: center;
+	color: #235;
+}
 }
 
 </style>
@@ -285,25 +339,28 @@ input[type="textfield"]{
 
 <input type="textfield" name="ans" value=""> 
 
-<input type="button" value="1" onClick="document.calculator.ans.value+='1'"> 
-<input type="button" value="2" onClick="document.calculator.ans.value+='2'"> 
-<input type="button" value="3" onClick="document.calculator.ans.value+='3'"> 
+<input type="button" value="7" onClick="document.calculator.ans.value+='7'"> 
+<input type="button" value="8" onClick="document.calculator.ans.value+='8'"> 
+<input type="button" value="9" onClick="document.calculator.ans.value+='9'"> 
 <br>
 <input type="button" value="4" onClick="document.calculator.ans.value+='4'"> 
 <input type="button" value="5" onClick="document.calculator.ans.value+='5'"> 
 <input type="button" value="6" onClick="document.calculator.ans.value+='6'"> 
 <br>
-<input type="button" value="7" onClick="document.calculator.ans.value+='7'"> 
-<input type="button" value="8" onClick="document.calculator.ans.value+='8'"> 
-<input type="button" value="9" onClick="document.calculator.ans.value+='9'"> 
+<input type="button" value="1" onClick="document.calculator.ans.value+='1'"> 
+<input type="button" value="2" onClick="document.calculator.ans.value+='2'"> 
+<input type="button" value="3" onClick="document.calculator.ans.value+='3'"> 
 <br>
-<input type="button" value="-" onClick="document.calculator.ans.value+='-'"> 
-<input type="button" value="+" onClick="document.calculator.ans.value+='+'"> 
-<input type="button" value="x" onClick="document.calculator.ans.value+='*'"> 
-<br>
-<input type="button" value="÷" onClick="document.calculator.ans.value+='/'"> 
+ 
 <input type="button" value="0" onClick="document.calculator.ans.value+='0'"> 
-<input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"> 
+<input type="button" value="." onClick="document.calculator.ans.value+='.'">
+<input type="button" class="black" value="÷" onClick="document.calculator.ans.value+='/'"> 
+</br>
+<input type="button" class="black" value="x" onClick="document.calculator.ans.value+='*'"> 
+<input type="button" class="black" value="+" onClick="document.calculator.ans.value+='+'"> 
+<input type="button" class="black" value="-" onClick="document.calculator.ans.value+='-'"> 
+<br/>
+<input type="button" class="orangered" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"> 
 
 
 <input type="reset" value="Reset"> 
@@ -323,17 +380,17 @@ input[type="textfield"]{
 
 </div>
 
-<div class="after-float">something new</div>
+<div class="after-float"><h5>Social Media Contact</h5></div>
 
 
 <a href="https://www.facebook.com/eximious.g">
 <ion-icon style="color:rgb(69, 94, 235)" name="logo-facebook"></ion-icon>
 </a>
 
-<a href="#">
+<a href="https://www.twitter.com/exay_0224">
  <ion-icon style="color:rgb(131, 188, 241)" name="logo-twitter"></ion-icon>
  </a>
- <a href="https://api.whatsapp.com/send?phone=+2348153929729&text=Hi, I contacted you Through your website.">
+ <a href="https://api.whatsapp.com/send?phone=+2348153929729&text=Hello Ese, I visited your website resently...">
  <ion-icon style="color:green" name="logo-whatsapp"></ion-icon>
  </a> 
 
@@ -341,13 +398,54 @@ input[type="textfield"]{
  <ion-icon style="color:rgb(193, 17, 216)" name="logo-instagram"></ion-icon>
 </a>
 
+<div class="row">
+<div class="column"><h3>ABOUT</h3>
+<p>
+My name is Ese Gypsy Odiase. 
+I am from Edo State and I reside in Lagos,
+Nigeria.
+I am a self-motivated computer enthusiast with strong
+passion for graphics and responsive
+web design. </p>
+
+<p> You can check out my <a href="#">portfolio,</a>
+<a href="#">YouTube Channel,</a>
+<a href="#">Blog Post,</a>
+ 
+and follow me on social media:<br>
+
+<a href="#">facebook</a><br>
+<a href="#">instagram</a><br>
+<a href="#">twitter</a>
+all @exay_f24
+</p>
+
 </div>
 
-<a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term="><img src="https://jumia.com/affiliate-program/banners/Jumia Nigeria/Computing/300X250.jpg"/>Jumia
-</a>
+<div class="column"><h3>GET IN TOUCH</h3>
+<form action="/action_page.php">
+  Name: <input type="text" name="Name" value="enter name"><br>
+  E-mail: <input type="text" name="E-mail" value="enter e-mail"><br><br>
+<textarea name="message" value="Please, type your message" rows="10" cols="25"></textarea></br>
+  <input type="submit" value="Submit">
+</form>
 
+</div>
+</div>
+<br></br>
+<br></br>
+<div class="after-float"><h3>Place Ads</h3></div>
+
+<a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term="><img src="https://jumia.com/affiliate-program/banners/Jumia Nigeria/Computing/300X250.jpg"/></a>
+<a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term="><img src="https://jumia.com/affiliate-program/banners/Jumia Nigeria/Computing/300X250.jpg"/></a>
+
+</div>
 
 <div class="footer">
+<h3>Tags</h3>
+<a href="#">About</a><br>
+<a href="#">Contact</a>
+
 <p>&copy;2019
 <a href="https://www.shapemytech.wordpress.com">
 | Ese G Odiase |
@@ -361,5 +459,6 @@ input[type="textfield"]{
 </body> 
 </html>
 
+    
     
     
