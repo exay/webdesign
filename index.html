@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equv="X-US-Compatible" content=""ie=edge">
 <title>Ese Odiase</title> 
+
+
 <style>
 <link rel="stylesheet" type="text/css" href="style.css"> 
 <link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.main.css" rel="stylesheet">   
@@ -23,13 +25,11 @@ a:link{
 .logo{
 	font-size: 30px;
 	float: right;
-	color: pink;
+	color: #234;
 	line-height: 60px;
-	
+	font-weight: bold;
 }
-span{
-	color: powderblue;
-}
+
 .header{
 	height: 100vh;
    opacity: 0.5;
@@ -43,7 +43,6 @@ background-size: cover;
 	opacity: 0.7;
 	background-color: #234;
 	width: 100%;
-}
 
 }
 .menu{
@@ -51,51 +50,60 @@ background-size: cover;
 	background-color: lavender;
 	
 }
+
 .menu a{
 	display: inline-block;
-	color: white;
+	color: yellowgreen;
 	text-decoration:none;
 	line-height: 60px;
 	text-align: center;
 	font-weight: bold;
-	padding: 14px;
-	
+	padding: 16px;
 	
 }
 .menu a:hover{
-	background-color: skyblue;
+	background-color: lavender;
+	color: green;
 }
 
 input[type="checkbox"]{
 	display: none ;
 
 }
+
 label{
-	font-size: 30px;
+
+    color: #fff;
+
+    font-size: 30px;
 	cursor: pointer;
 	display: none;
 	line-height: 60px;
-	margin-right: 10px;
-	
-}
+
+    margin-right: 20px;
+
+    }
 
 .container{
 	margin-top: 45px;
 	width: 100% ;
 	height: auto;
-	
-	
-}
-.centered-text h1{
-	color: pink;
 	text-align: center;
+	
 }
-.centered-text p{
+.centered-text h2{
 	color: powderblue;
 	text-align: center;
 }
+.centered-text h4{
+	color: white;
+	text-align: center;
+}
+ion-icon{
+    font-size: 30px;
+    }
 body{
-	background: url(https://shapemytech.files.wordpress.com/2019/04/6572869154489069922.jpg)no-repeat 50% 50%;
+	background: url(https://shapemytech.files.wordpress.com/2019/04/img_20180325_174416_398.jpg)no-repeat 50% 50%;
 	
 	background-size: cover;
 }
@@ -126,33 +134,59 @@ html,body{
 .after-float{
 	clear: both;
 }
-input[type="button"]
-{
-	font-size: 40px;
+
+.lightgrey{
+	background-color: lightgrey;
+	height: 30px;
 	text-align: center;
-	width: 26%;
-	float: center;
-	margin-left: 2px;
+	width: 35px;
+	margin: none;
 	border-radius: 10%;
-	color: #235;
+	font-size: 18px;
 }
 .orangered{
+	height: 30px;
+	text-align: center;
+	width: 35px;
 	background-color: orangered;
 	border-radius: 8%;
+	font-size: 40px;
+	color:#fff;
 }
 .black{
+	height: 30px;
+	text-align: center;
+	width: 35px;
 	background-color: grey;
 	border-radius: 8%;
 }
+.orange{
+	height: 30px;
+	text-align: center;
+	width: 35px;
+	background-color: orangered;
+	border: none;
+	margin-top: 2px;
+	border-radius: 8%;
+}
+.pink{
+	height: 30px;
+	text-align: center;
+	width: 35px;
+	background-color: orange;
+	border: none;
+	border-radius: 8%;
+}
 input[type="reset"]{
-	font-size: 35px;
-	margin-left: 15px;
-	margin-top: 5px;
+	font-size: 15px;
+	width: 35px;
+	height: 30px;
 	color: #ccc;
 	background-color: #235;
 	border: none;
-	border-radius: 10px;
-	
+	border-radius: 8%;
+	margin-left: 2px;
+	margin-top: 4px;
 }
 
 input[type="textfield"]{
@@ -178,10 +212,14 @@ span{
 	color: #fff;
 	width: 100%;
 	background-color: #567;
-	margin: 0px;
+	margin-bottom: 0px;
 }
 form{
 	width: 100%;
+	color: #eee;	
+font-weight: bold;
+font-size: 14px;
+	
 }
 
 /* Create two equal columns that floats next to each other */
@@ -191,7 +229,7 @@ form{
     float: left;
     margin: 2px;
     width: 48%;
-    height: 320px; /* Should be removed. Only for demonstration */
+    height: 400px; /* Should be removed. Only for demonstration */
 }
 /* Clear floats after the columns */
 .row {
@@ -205,6 +243,47 @@ h3{
 	text-align: center;
 	color: #fff;
 }
+.contact{
+	color: yellowgreen;
+}
+.centered-button input{
+	width: auto;
+	border: 1px #fff solid;
+	border-radius: 30px;
+	background-color: transparent;
+	color: yellowgreen;
+	font-size: 25px;
+	font-weight: bold;
+}
+.transparent{
+	background-color: transparent;
+	border: 4px white solid;
+	border-radius: 8px;
+	margin: 2px;
+	height: 40px;
+	width: 75%;
+}
+.transparents{
+	background-color: transparent;
+	border: 4px white solid;
+	border-radius: 8px;
+	width: 95%;
+	height: auto;
+}
+input[type="submit"]{
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	background-color: yellowgreen;;
+	border: none;
+	border-radius: 10px;
+	
+}
+
+a:link{
+	text-decoration: none;
+	color: #fff;
+}
 @media only screen and (max-width: 500px){
 body{
 	background: linear-gradient( pink, powderblue);
@@ -216,6 +295,9 @@ body{
 	margin: 0px;
 	
 }
+.logo{
+	color: lightgrey;
+}
 .nav{
 	border-bottom: solid #345;
 	line-height: 40px;
@@ -225,12 +307,11 @@ body{
 }
 .menu{
 	display: none;
-	background-color: lavender;
-	
+	background-color: yellowgreen;
 }
 .menu a{
 	display: block;
-	color: white;
+	color: #fff;
 	text-decoration:none;
 	line-height: 60px;
 	text-align: center;
@@ -239,7 +320,8 @@ body{
 	border-bottom: solid #fff;
 }
 .menu a:hover{
-	background-color:pink;
+	background-color: lavender;
+	color: yellowgreen;
 }
 input[type="checkbox"]{
 	display: none ;
@@ -261,34 +343,41 @@ label{
 }
 input[type="button"]
 {
-	font-size: 30px;
+	font-size: 30;
 	text-align: center;
-	width: 25%;
+	width: 20%;
 	float: center;
-	margin-left: 10px;
+	margin-left: 4px;
 	border-radius: 8%;
 	color: #235;
 }
 
 input[type="reset"]{
-	font-size: 32px;
-	margin-left: 80px;
+	font-size: 30;
+	width: 20%;
 	margin-top: 5px;
+	margin-left: 4px;
 	color: #ccc;
 	background-color: #235;
 	border: none;
-	border-radius: 10px;
+	border-radius: 8%;
 	
 }
-
+.orange{
+	background-color: orangered;
+	border: none;
+}
+.pink{
+	background-color: orange;
+	border: none;
+}
 input[type="textfield"]{
-	position: relative;
-	width: 95%;
-	height: 50px;
+	width: 90%;
+	height: 100px;
 	margin-bottom: 5px;
-	font-size: 40px;
+	font-size: 50px;
 	border-radius: 2%;
-	box-shadow: 15px, 19px lightgrey;
+	box-shadow: 0 0 15 19(rgb);
 	border: none;
 }
 h2{
@@ -317,26 +406,68 @@ h3{
     display: table;
 }
 
+.centered-button input{
+	width: auto;
+	border: 1px white solid;
+	border-radius: 30px;
+	background-color: transparent;
+	font-size: 20px;
+	font-weight: bold;
+}
+.transparents{
+	background-color: transparent;
+	border: 4px white solid;
+	border-radius: 8px;
+	width: 92%;}
+	form{
+		color: #234;	
+		font-size: 16px;
+	}
+}
 </style>
 </head>
 <body>
 <div class="header">
 <div class="nav">
 <div class="logo">
-<span style="color:powderblue">Ese</span> Odiase</div>
+<span style="color:yellowgreen">Front</span>End</div>
 <label for="toggle">&#9776;</label>
 <input type="checkbox" id="toggle"/>
 <div class="menu">
-<a class="active" href="#">Home</a>
-<a href="#">About</a>
+<a class="active" href="https://shapemytech.wordpress.com">Blog</a>
+<a href="#">Channel</a>
 <a href="#">Contact</a>
 </div></div>
 
 <div class="container">
 <div class="centered-text">
-<h1>Yes!</h1></div>
+<h2>Hello there! I'm
+<span style="color: whitesmoke">Ese Odiase.</span>
+</h2></div>
 <div class="centered-text">
-<p>We are coming soon.</p></div>
+<h4>I am the Junior Web Developer you've been searching for.</h4>
+</br>
+<div class="centered-button">
+<input type="button" class="contact" value="Get in touch"/>
+</div>
+</br>
+<a href="https://www.facebook.com/eximious.g">
+<ion-icon style="color:rgb(69, 94, 235)" name="logo-facebook"></ion-icon>
+</a>
+
+<a href="https://www.twitter.com/exay_0224">
+ <ion-icon style="color:rgb(131, 188, 241)" name="logo-twitter"></ion-icon>
+ </a>
+ <a href="https://api.whatsapp.com/send?phone=+2348153929729&text=Hello Ese, I visited your website resently...">
+ <ion-icon style="color:green" name="logo-whatsapp"></ion-icon>
+ </a> 
+
+<a href="https://www.instagram.com/exay_02.24/">
+ <ion-icon style="color:rgb(193, 17, 216)" name="logo-instagram"></ion-icon>
+</a>
+</p>
+
+</div>
 </div>
 </div>
 
@@ -346,41 +477,40 @@ h3{
 
 
 <div class="box">
-<div class="boxes">
 
+<h1><i> Portfolio</i></h1>
+<div class="boxes">
 <h2><span> Number </span>Cruncher</h2> 
 
 <form name="calculator"> 
 
-
-
 <input type="textfield" name="ans" value=""> 
 
-<input type="button" value="7" onClick="document.calculator.ans.value+='7'"> 
-<input type="button" value="8" onClick="document.calculator.ans.value+='8'"> 
-<input type="button" value="9" onClick="document.calculator.ans.value+='9'"> 
+<input type="button" value="7" class="lightgrey" onClick="document.calculator.ans.value+='7'"> 
+<input type="button" value="8" class="lightgrey" onClick="document.calculator.ans.value+='8'"> 
+<input type="button" value="9" class="lightgrey" onClick="document.calculator.ans.value+='9'"> 
+<input type="button" value="÷" class="black" onClick="document.calculator.ans.value+='/'"> 
 <br>
-<input type="button" value="4" onClick="document.calculator.ans.value+='4'"> 
-<input type="button" value="5" onClick="document.calculator.ans.value+='5'"> 
-<input type="button" value="6" onClick="document.calculator.ans.value+='6'"> 
+<input type="button" value="4" class="lightgrey" onClick="document.calculator.ans.value+='4'"> 
+<input type="button" value="5" class="lightgrey" onClick="document.calculator.ans.value+='5'"> 
+<input type="button" value="6" class="lightgrey" onClick="document.calculator.ans.value+='6'"> 
+<input type="button" value="x" class="black" onClick="document.calculator.ans.value+='*'"> 
 <br>
-<input type="button" value="1" onClick="document.calculator.ans.value+='1'"> 
-<input type="button" value="2" onClick="document.calculator.ans.value+='2'"> 
-<input type="button" value="3" onClick="document.calculator.ans.value+='3'"> 
+<input type="button" value="1" class="lightgrey" onClick="document.calculator.ans.value+='1'"> 
+<input type="button" value="2" class="lightgrey" onClick="document.calculator.ans.value+='2'"> 
+<input type="button" value="3" class="lightgrey" onClick="document.calculator.ans.value+='3'"> 
+<input type="button" value="+" class="black" onClick="document.calculator.ans.value+='+'"> 
 <br>
- 
-<input type="button" value="0" onClick="document.calculator.ans.value+='0'"> 
-<input type="button" value="." onClick="document.calculator.ans.value+='.'">
-<input type="button" class="black" value="÷" onClick="document.calculator.ans.value+='/'"> 
-</br>
-<input type="button" class="black" value="x" onClick="document.calculator.ans.value+='*'"> 
-<input type="button" class="black" value="+" onClick="document.calculator.ans.value+='+'"> 
-<input type="button" class="black" value="-" onClick="document.calculator.ans.value+='-'"> 
-<br/>
-<input type="button" class="orangered" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"> 
+<input type="button" value="0" class="lightgrey" onClick="document.calculator.ans.value+='0'"> 
+<input type="button" value="." class="lightgrey" onClick="document.calculator.ans.value+='.'"> 
+<input type="button" class="orange" value="&larr;" onClick="document.calculator.ans.value = (document.calculator.ans.value.length - 1)">
+<input type="button" value="-" class="black" onClick="document.calculator.ans.value+='-'"> 
+<br>
+<input type="button" value="(" class="lightgrey" onClick="document.calculator.ans.value+='('"> 
+<input type="button" value=")" class="lightgrey" onClick="document.calculator.ans.value+=')'"> 
+<input type="button" class="pink" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"> 
+<input type="reset"  value="C"> 
 
-
-<input type="reset" value="Reset"> 
 </form> 
 </div>
 
@@ -400,20 +530,7 @@ h3{
 <div class="after-float"><h5>Social Media Contact</h5></div>
 
 
-<a href="https://www.facebook.com/eximious.g">
-<ion-icon style="color:rgb(69, 94, 235)" name="logo-facebook"></ion-icon>
-</a>
 
-<a href="https://www.twitter.com/exay_0224">
- <ion-icon style="color:rgb(131, 188, 241)" name="logo-twitter"></ion-icon>
- </a>
- <a href="https://api.whatsapp.com/send?phone=+2348153929729&text=Hello Ese, I visited your website resently...">
- <ion-icon style="color:green" name="logo-whatsapp"></ion-icon>
- </a> 
-
-<a href="https://www.instagram.com/exay_02.24/">
- <ion-icon style="color:rgb(193, 17, 216)" name="logo-instagram"></ion-icon>
-</a>
 
 <div class="row">
 <div class="column"><h3>ABOUT</h3>
@@ -440,12 +557,13 @@ all @exay_f24
 </div>
 
 <div class="column"><h3>GET IN TOUCH</h3>
-<form action="/action_page.php">
-  Name: <input type="text" name="Name" value="enter name"><br>
-  E-mail: <input type="text" name="E-mail" value="enter e-mail"><br><br>
-<textarea name="message" value="Please, type your message" rows="10" cols="25"></textarea></br>
+<form action="https://formspree.io/odiasegypsy@gmail.com"method="POST">
+  Name: <input type="text" name="name" class="transparent"><br>
+  E-mail: <input type="email" name="_replyto" class="transparent"><br><br>
+<textarea name="message" value="" class="transparents" rows="10" cols=""></textarea></br>
   <input type="submit" value="Submit">
 </form>
+
 
 </div>
 </div>
@@ -453,8 +571,26 @@ all @exay_f24
 <br></br>
 <div class="after-float"><h3>Place Ads</h3></div>
 
-<a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term="><img src="https://jumia.com/affiliate-program/banners/Jumia Nigeria/Computing/300X250.jpg"/></a>
-<a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term="><img src="https://jumia.com/affiliate-program/banners/Jumia Nigeria/Computing/300X250.jpg"/></a>
+<div class="box">
+<div class="boxes">
+<h2><span> Jumia </span> Market<h2>
+<a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term="><img src="https://.jpg"/></a>
+</div>
+<div class="boxes">
+<h2><span> Banner </span> For Ad<h2>
+<a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term="><img src="https://.jpg"/></a>
+
+</div>
+<div class="boxes">
+<h2><span> Jumia </span> Market<h2>
+
+
+</div>
+
+</div>
+
+<div class="after-float"><h5>Social Media Contact</h5></div>
+
 
 </div>
 
@@ -464,8 +600,8 @@ all @exay_f24
 <a href="#">Contact</a>
 
 <p>&copy;2019
-<a href="https://www.shapemytech.wordpress.com">
-| Ese G Odiase |
+<a href="https://shapemytech.wordpress.com">
+SMT | Ese G Odiase |
 </a>
 </p>
 </div>
@@ -476,6 +612,12 @@ all @exay_f24
 </body> 
 </html>
 
+    
+    
+    
+    
+    
+    
     
     
     
